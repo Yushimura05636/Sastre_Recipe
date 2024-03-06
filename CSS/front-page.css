@@ -72,6 +72,7 @@ body {
     margin-right: 20px;
     border: 0rem solid black;
     width: 50%;
+    position: relative;
 }
 
 .search-box {
@@ -223,13 +224,20 @@ body {
     background-color: #f9f9f9;
     padding: 1rem;
     width: 50%;
-    margin-left: 24%;
+    margin-left: 24.5%;
     margin-top: 0.2%;
-    position: relative;
+    position: absolute;
     display: none;
     cursor: pointer;
     animation: fadeInUp 1.5s ease alternate;
     border-radius: 1rem;
+}
+
+@media only screen and (min-width: 651px)
+{
+    #suggestions {
+        margin-left: 24.3% !important;
+    }
 }
 
 .suggestion-item
@@ -538,8 +546,7 @@ body {
 
 .button-position-custom-right
 {
-    margin-left: 25rem;
-    margin-top: 16.5rem;
+    /* */
 }
 
 .button-position-custom-left
