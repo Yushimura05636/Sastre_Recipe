@@ -1,4 +1,4 @@
-@media only screen and (min-width: 963px) {
+@media only screen and (min-width: 700px) {
     .front-page-content-div-1-context-1, .front-page-content-div-1-context-2, .front-page-content-div-1-context-3, .front-page-content-div-1-context-4, .front-page-content-div-1-context-5
     {
         margin-top: -1rem;
@@ -192,8 +192,7 @@
         left: 35%;
         top: 60%;
     }
-
-
+    
     /* public flex */
     .flex-main
     {

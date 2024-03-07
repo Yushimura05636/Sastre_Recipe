@@ -37,6 +37,9 @@ window.addEventListener('scroll', function() {
              //page 5
             this.document.getElementById('page-5').style.transform = 'translateX(-100%)';
             
+            //page 6
+            this.document.getElementById('page-6').style.transform = 'translateX(100%)';
+            
         }
     }
     else if(animationCount > 0)
@@ -59,6 +62,9 @@ window.addEventListener('scroll', function() {
 
              //page 5
              this.document.getElementById('page-5').style.transform = 'translateX(100%)';
+
+             //page 6
+            this.document.getElementById('page-6').style.transform = 'translateX(-100%)';
             
         }
     }
