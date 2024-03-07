@@ -363,6 +363,54 @@
         right: 100%;
         position: relative;
     }
+
+    .front-page-conent-div-1-context-7
+    {
+        background: url("../RES/background_omelette.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -60px 1px;
+        color: white;
+        margin-top: 1rem;
+        left: 100%;
+        position: relative;
+    }
+
+    .front-page-conent-div-1-context-8
+    {
+        background: url("../RES/background_bulalo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -60px 1px;
+        color: white;
+        margin-top: 1rem;
+        right: 100%;
+        position: relative;
+    }
+
+    .front-page-conent-div-1-context-9
+    {
+        background: url("../RES/background_bulalo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -60px 1px;
+        color: white;
+        margin-top: 1rem;
+        left: 100%;
+        position: relative;
+    }
+
+    .front-page-conent-div-1-context-10
+    {
+        background: url("../RES/background_bulalo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -60px 1px;
+        color: white;
+        margin-top: 1rem;
+        right: 100%;
+        position: relative;
+    }
     
     .front-page-content-div-text
     {
@@ -389,6 +437,7 @@
         text-align: center;
         font-size: 2rem;
         padding: 1rem;
+        border: 1px solid black;
     }
     
     .front-page-content-div-2-context-1-inner
