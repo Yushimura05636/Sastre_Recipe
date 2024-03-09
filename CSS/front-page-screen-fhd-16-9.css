@@ -436,6 +436,7 @@
         background: url("../RES/background_kitchen.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: 0% 50%;
         color: white;
         margin-top: 1rem;
     }
@@ -495,7 +496,6 @@
         padding-left: 5.5rem;
         padding-top: 5rem;
         border-radius: 1rem !important;
-        
     }
     
     .front-page-content-div-1-context-1-inner-2,
@@ -535,7 +535,7 @@
     .front-page-content-div-1-context-9-inner-2
     {
         margin-left: 40% !important;
-        margin-top: 20% !important;
+        margin-top: 12% !important;
         border-radius: 1rem !important;
     }
     
