@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/front-page-screen-fhd.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_design.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_comment_section.css" />
+    <title>Sushi Recipe</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../HTML/about_us.html">About</a></li>
+            <li><a href="../HTML/service.html">Services</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="search-bar fade-in-up animation-delay-2long custom-search-bar" >
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-box" id="searchBox">
+        </div>
+        <div id="suggestions" style="left:-24.5%;">
+            &nbsp;
+        </div>
+        <script src="../JAVASCRIPT/function_search.js"></script>
+    </div>
+    <h1>
+        Sushi
+    </h1>
+    <div class="review-container">
+        <div class="review-content" id="review-content">
+            <img class="food-image" src="../RES/background_sushi.jpg" width="75%" />
+            <div class="flex-main recipe-container-main">
+                <div class="food-review-content-1">
+                    <h2 class="text-left">Sushi Recipe</h2>
+                    <ul>
+                        <li>2 cups sushi rice</li>
+                        <li>2 1/2 cups water</li>
+                        <li>1/2 cup rice vinegar</li>
+                        <li>2 tablespoons sugar</li>
+                        <li>1 teaspoon salt</li>
+                        <li>Nori (seaweed sheets)</li>
+                        <li>Assorted fillings (e.g., cucumber, avocado, crab sticks, smoked salmon)</li>
+                        <li>Soy sauce, pickled ginger, and wasabi for serving</li>
+                    </ul>
+                </div>
+                <div class="food-review-content-2">
+                    <h2 class="text-left">Instructions</h2>
+                    <ol class="modern-ol">
+                        <li>Rinse the sushi rice in cold water until the water runs clear.</li>
+                        <li>In a saucepan, combine the sushi rice and water. Bring to a boil, then reduce the heat to low, cover, and simmer for 20 minutes.</li>
+                        <li>In a small bowl, mix the rice vinegar, sugar, and salt until dissolved.</li>
+                        <li>Transfer the cooked rice to a large bowl and gently fold in the vinegar mixture. Let the rice cool to room temperature.</li>
+                        <li>Place a sheet of nori on a bamboo sushi mat. Spread a thin layer of rice evenly over the nori, leaving a 1-inch border at the top edge.</li>
+                        <li>Arrange your desired fillings in a line across the center of the rice.</li>
+                        <li>Roll the sushi tightly using the bamboo mat, starting from the bottom edge. Moisten the top border of the nori with a little water to seal the roll.</li>
+                        <li>Using a sharp knife, slice the sushi roll into bite-sized pieces.</li>
+                        <li>Serve the sushi with soy sauce, pickled ginger, and wasabi.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="video-content">
+                How to make sushi?
+                <iframe width="789" height="592" src="https://www.youtube.com/embed/W9nZ6u15yis" title="Black Screen 10 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="container">
+                <h1 class="comment-title">Comment Section</h1>
+                <textarea id="commentInput" placeholder="Add your comment here"></textarea>
+                <button onclick="addComment()">Add Comment</button>
+                <div id="commentContainer" class="comments"></div>
+            </div>            
+        </div>
+    </div>
+    <script src="../JAVASCRIPT/function_comment.js"></script>
+</body>
+</html>

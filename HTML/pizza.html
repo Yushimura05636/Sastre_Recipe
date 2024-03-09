@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/front-page-screen-fhd.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_design.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_comment_section.css" />
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../HTML/about_us.html">About</a></li>
+            <li><a href="../HTML/service.html">Services</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="search-bar fade-in-up animation-delay-2long custom-search-bar" >
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-box" id="searchBox">
+        </div>
+        <div id="suggestions" style="left:-24.5%;">
+            &nbsp;
+        </div>
+        <script src="../JAVASCRIPT/function_search.js"></script>
+    </div>
+    <h1>
+        Pizza
+    </h1>
+    <div class="review-container">
+        <div class="review-content" id="review-content">
+            <img class="food-image" src="../RES/background_pizza.jpg" width="75%" />
+            <div class="flex-main recipe-container-main">
+                <div class="food-review-content-1">
+                    <h2 class="text-left">Pizza Recipe</h2>
+                    <ul>
+                        <li>1 pizza dough (store-bought or homemade)</li>
+                        <li>1/2 cup pizza sauce</li>
+                        <li>1 1/2 cups shredded mozzarella cheese</li>
+                        <li>
+                            Toppings of your choice:
+                            <ul>
+                                <li>Pepperoni</li>
+                                <li>Sliced bell peppers</li>
+                                <li>Sliced onions</li>
+                                <li>Sliced mushrooms</li>
+                                <li>Olives</li>
+                                <!-- Add more toppings as needed -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="food-review-content-2">
+                    <h2 class="text-left">Instructions</h2>
+                    <ol class="modern-ol">
+                        <li>Preheat your oven to 475°F (245°C). If you have a pizza stone, place it in the oven to preheat as well.</li>
+                        <li>If you're using store-bought pizza dough, follow the instructions on the package to roll it out. If you're making homemade dough, roll it out on a lightly floured surface into a round shape, about 12 inches in diameter.</li>
+                        <li>Place the rolled-out dough on a pizza peel or a lightly floured surface. Spread the pizza sauce evenly over the dough, leaving a small border around the edges for the crust.</li>
+                        <li>Sprinkle the shredded mozzarella cheese over the sauce.</li>
+                        <li>Add your desired toppings evenly over the cheese. You can get creative here and add whatever toppings you like!</li>
+                        <li>If you're using a pizza stone, carefully transfer the pizza onto the hot stone in the oven. If not, you can bake the pizza on a baking sheet. Bake for 12-15 minutes, or until the crust is golden brown and the cheese is bubbly and melted.</li>
+                        <li>Once the pizza is done, remove it from the oven and let it cool for a few minutes before slicing. Serve hot and enjoy your homemade pizza!</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="video-content">
+                How to make pizza?
+
+                <iframe width="789" height="592" src="https://www.youtube.com/embed/W9nZ6u15yis" title="Black Screen 10 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="container">
+                <h1 class="comment-title">Comment Section</h1>
+                <!-- Textbox for adding comments -->
+                <textarea id="commentInput" placeholder="Add your comment here"></textarea>
+                <!-- Button to add comment -->
+                <button onclick="addComment()">Add Comment</button>
+                <!-- Container to display comments -->
+                <div id="commentContainer" class="comments"></div>
+            </div>            
+        </div>
+    </div>
+</body>
+<script src="../JAVASCRIPT/function_comment.js"></script>
+</html>

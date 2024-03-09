@@ -1,0 +1,749 @@
+/* These resolution is for those who have laptops with 1080 x 1920 */
+@media only screen and (min-width: 700px) {
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .navbar {
+        width: 100%;
+        background-color: black;
+        color: black;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .navbar ul li {
+        display: inline-block;
+    }
+    
+    .navbar ul li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navbar ul li a:hover {
+        background-color: #333;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        width: 100%;
+        background-color: black;
+        color: black;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .navbar ul li {
+        display: inline-block;
+    }
+    
+    .navbar ul li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navbar ul li a:hover {
+        background-color: #333;
+    }
+    
+    .search-container {
+        display: inline-block;
+        margin-right: 20px;
+        border: 0rem solid black;
+        width: 50%;
+        position: relative;
+    }
+    
+    .search-box {
+        padding: 1rem;
+        border: 0rem solid black;
+        border-radius: .8rem;
+        background-color: white;
+        color: black;
+        outline: none;
+        width: 100%;
+        box-shadow: 5px 5px gray;
+    }
+    
+    .search-box:focus {
+        border-color: #333;
+    }
+    
+    .front-title-main
+    {
+        text-align: center;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+    
+    .front-title-context
+    {
+        color: white;
+    }
+    
+    .font-title-main-sub-title-context
+    {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .font-title-main-background
+    {
+        border: 0rem solid black;
+        background: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlNF9waG90b19vZl9qYXBhbmRpX2tpdGNoZW5fcm9vbV9pbnRlcmlvcl93aXRoX2FfY19iMzY2ZTkxNC0zMjBhLTRjNjYtYTU0Ni05Zjc5NTEzZjE0MDhfMS5qcGc.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        padding: 1rem;
+        box-shadow: 2px 2px 5px 5px gray;
+        transition: ease 1s;
+    }
+    
+    .front-page-content-1
+    {
+        padding: 1rem;
+        border: 1px solid black;
+        height: 20rem;
+        background-color: white;
+    }
+    
+    .flex-front-page-content-main
+    {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        font-family: "Open sans", sans-serif;
+    }
+    
+    .flex-front-page-content-main .flex-front-page-content-context
+    {
+        -ms-flex: 1;
+        flex: 1;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    
+    .flex-front-page-content-context
+    {
+    
+    }
+    
+    .front-page-content-icon
+    {
+        width: 15%;
+        border: 1px solid black;
+        border-radius: 5rem;
+        padding: 5px;
+        box-shadow: 3px 2px gray;
+        margin-top: 5rem;
+    }
+    
+    .front-page-content-context-inner
+    {
+        text-align: center;
+    }
+    
+    .front-page-content-context-inner-text-center
+    {
+        font-size: x-large;
+    }
+    
+    .front-page-content-context-inner-text
+    {
+        font-size: medium;
+    }
+    
+    .fade-in-up-js {
+        opacity: 0;
+        transform: translateY(150px); /* Initial position below */
+        transition: opacity 1s ease, transform 1s ease; /* Transition properties */
+    }
+    
+    .fade-in-up {
+        opacity: 0;
+        animation: fadeInUp 1.5s ease forwards; /* Animation applied to fade in and move up */
+    }
+    
+    .animation-delay-short
+    {
+        animation-delay: 0.5s;    
+    }
+    
+    .animation-delay-long
+    {
+        animation-delay: 1s;    
+    }
+    
+    .animation-delay-2long
+    {
+        animation-delay: 2s;    
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px); /* Initial position below */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Move to original position */
+        }
+    }
+    
+    [name="page_recipe"], [name="page_professional"], [name="page_personality"] 
+    {
+        cursor: pointer;
+    }
+    
+    #suggestions {
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        padding: 1rem;
+        width: 50%;
+        margin-left: 24.5%;
+        margin-top: 0.2%;
+        position: absolute;
+        display: none;
+        cursor: pointer;
+        animation: fadeInUp 1.5s ease alternate;
+        border-radius: 1rem;
+    }
+    
+    @media only screen and (min-width: 651px)
+    {
+        #suggestions {
+            margin-left: 24.3% !important;
+        }
+    }
+    
+    .suggestion-item
+    {
+        padding:1rem;
+        transition: background-color 0.3s ease, color 0.3 ease;
+    }
+    
+    .suggestion-item:hover
+    {
+        cursor: pointer;
+        background-color: gray;
+        color: white;
+        font-size: xx-large;
+    }
+    
+    .front-page-content-div-1
+    {
+        width: 100%;
+        height: 4300px;
+    }
+    
+    .front-page-content-div-2
+    {
+        width: 100%;
+        height: 4300px;
+    }
+    
+    .front-page-content-div-1-context-1,
+    .front-page-content-div-1-context-2,
+    .front-page-content-div-1-context-3,
+    .front-page-content-div-1-context-4,
+    .front-page-content-div-1-context-5,
+    .front-page-content-div-1-context-6,
+    .front-page-content-div-1-context-7,
+    .front-page-content-div-1-context-8,
+    .front-page-content-div-1-context-9,
+    .front-page-content-div-1-context-10 
+    {
+        margin-top: -1rem;
+        height: 25rem;
+        font-family: "New Sans", sans-serif;
+        border-radius: 1rem;
+        background-size: 100% 100%;
+    }
+
+    .front-page-content-div-1-context-1:hover,
+    .front-page-content-div-1-context-2:hover,
+    .front-page-content-div-1-context-3:hover,
+    .front-page-content-div-1-context-4:hover,
+    .front-page-content-div-1-context-5:hover,
+    .front-page-content-div-1-context-6:hover,
+    .front-page-content-div-1-context-7:hover,
+    .front-page-content-div-1-context-8:hover,
+    .front-page-content-div-1-context-9:hover,
+    .front-page-content-div-1-context-10:hover {
+        background-size: 105%; /* Increase background size on hover */
+    }
+        
+    .front-page-content-div-2-context-1,
+    .front-page-content-div-2-context-2,
+    .front-page-content-div-2-context-3,
+    .front-page-content-div-2-context-4,
+    .front-page-content-div-2-context-5 
+    {
+        margin-top: -1rem;
+        font-family: "New Sans", sans-serif;
+        border-radius: 1rem;
+    }
+
+    .front-page-content-div-1-context-1
+    {
+        background: url("../RES/background_pizza.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 60px 1px;
+        color: white;
+        margin-top: 1rem;
+        left: 100%;
+        position: relative;
+    }
+    
+    .front-page-content-div-1-context-2
+    {
+        background: url("../RES/background_cake.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -60px 1px;
+        color: white;
+        margin-top: 1rem;
+        right: 100%;
+        position: relative;
+    }
+    
+    .front-page-content-div-1-context-3
+    {
+        background: url("../RES/background_spaghetti.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 60px 1px;
+        color: white;
+        margin-top: 1rem;
+        left: 100%;
+        position: relative;
+    }
+    
+    .front-page-content-div-1-context-4
+    {
+        background: url("../RES/background_adobo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -60px 1px;
+        color: white;
+        margin-top: 1rem;
+        right: 100%;
+        position: relative;
+    }
+    
+    .front-page-content-div-1-context-5
+    {
+        background: url("../RES/background_sushi.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 60px;
+        color: white;
+        margin-top: 1rem;
+        left: 100%;
+        position: relative;
+    }
+    
+    .front-page-content-div-1-context-6
+    {
+        background: url("../RES/background_bulalo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -60px 1px;
+        color: white;
+        margin-top: 1rem;
+        right: 100%;
+        position: relative;
+    }
+
+    .front-page-content-div-1-context-7
+    {
+        background: url("../RES/background_omelette.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 60px;
+        color: white;
+        margin-top: 1rem;
+        left: 100%;
+        position: relative;
+    }
+
+    .front-page-content-div-1-context-8
+    {
+        background: url("../RES/background_lumpia.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -60px 1px;
+        color: white;
+        margin-top: 1rem;
+        right: 100%;
+        position: relative;
+    }
+
+    .front-page-content-div-1-context-9
+    {
+        background: url("../RES/background_mac&cheese.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 60px 1px;
+        color: white;
+        margin-top: 1rem;
+        left: 100%;
+        position: relative;
+    }
+
+    .front-page-content-div-1-context-10
+    {
+        background: url("../RES/background_macaroni_salad.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -60px 1px;
+        color: white;
+        margin-top: 1rem;
+        right: 100%;
+        position: relative;
+    }
+
+    .front-page-content-div-2-context-1
+    {
+        background: url("../RES/background_kitchen.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        margin-top: 1rem;
+    }
+    
+    .front-page-content-div-text
+    {
+        text-align: center;
+        font-size: 350%;
+        font-family: "New Sans", sans-serif;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .front-page-content-div-1-context-1-inner,
+    .front-page-content-div-1-context-2-inner,
+    .front-page-content-div-1-context-3-inner,
+    .front-page-content-div-1-context-4-inner,
+    .front-page-content-div-1-context-5-inner,
+    .front-page-content-div-1-context-6-inner,
+    .front-page-content-div-1-context-7-inner,
+    .front-page-content-div-1-context-8-inner,
+    .front-page-content-div-1-context-9-inner,
+    .front-page-content-div-1-context-10-inner
+    {
+        width: 50%;
+        height: 23rem;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    .front-page-content-div-2-context-1-inner
+    {
+        width: 100%;
+        height: 45rem !important;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    
+    .front-page-content-div-1-context-1-inner-1,
+    .front-page-content-div-1-context-2-inner-2,
+    .front-page-content-div-1-context-3-inner-1,
+    .front-page-content-div-1-context-4-inner-2,
+    .front-page-content-div-1-context-5-inner-1,
+    .front-page-content-div-1-context-6-inner-2,
+    .front-page-content-div-1-context-7-inner-1,
+    .front-page-content-div-1-context-8-inner-2,
+    .front-page-content-div-1-context-9-inner-1,
+    .front-page-content-div-1-context-10-inner-2
+    {
+        font-size: large;
+        text-shadow: 1px 2px black;
+        text-align: justify;
+        background: rgba(128, 128, 128, 0.78);
+        width: 50%;
+        padding-left: 5.5rem;
+        padding-top: 5rem;
+        border-radius: 1rem !important;
+        
+    }
+    
+    .front-page-content-div-1-context-1-inner-2,
+    .front-page-content-div-1-context-2-inner-1,
+    .front-page-content-div-1-context-3-inner-2,
+    .front-page-content-div-1-context-4-inner-1,
+    .front-page-content-div-1-context-5-inner-2,
+    .front-page-content-div-1-context-6-inner-1,
+    .front-page-content-div-1-context-7-inner-2,
+    .front-page-content-div-1-context-8-inner-1,
+    .front-page-content-div-1-context-9-inner-2,
+    .front-page-content-div-1-context-10-inner-1
+    {
+        font-size: large;
+        padding: 3rem;
+        text-shadow: 1px 2px black;
+        text-align: justify;
+        background: rgba(128, 128, 128, 0.78);
+        width: 500px;
+        border-radius: 1rem !important;
+    }
+    
+    .front-page-content-div-1-context-2-inner-1,
+    .front-page-content-div-1-context-4-inner-1,
+    .front-page-content-div-1-context-6-inner-1,
+    .front-page-content-div-1-context-8-inner-1,
+    .front-page-content-div-1-context-10-inner-1
+    {
+        margin-right: 40% !important;
+        border-radius: 1rem !important
+    }
+    
+    .front-page-content-div-1-context-1-inner-2,
+    .front-page-content-div-1-context-3-inner-2,
+    .front-page-content-div-1-context-5-inner-2,
+    .front-page-content-div-1-context-7-inner-2,
+    .front-page-content-div-1-context-9-inner-2
+    {
+        margin-left: 40% !important;
+        margin-top: 20% !important;
+        border-radius: 1rem !important;
+    }
+    
+
+    .front-page-content-div-2-context-1-inner-1
+    {
+        width: 100%;
+        background: url("../RES/background_red_curtain.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        position: relative !important;
+    }
+
+    .front-page-content-div-2-context-1-inner-2
+    {
+        width: 100%;
+        background: url("../RES/background_red_curtain.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        position: relative !important; 
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    
+    .front-page-content-div-2-context-1-inner-3
+    {
+        display: none;
+        animation: fadeIn 0.1s;
+    }
+
+    @keyframes fadeIn {
+        0%
+        {
+            opacity: 0;
+        }
+        100%
+        {
+            opacity: 1;
+        }
+    }
+
+    /* public flex */
+    .flex-main
+    {
+        width: 100%;
+        height: 370px;
+        display: flex;
+        position: relative;
+    }
+    
+    .flex-main, .front-page-content-div-1-context-1-inner, .front-page-content-div-2-context-1-inner, .food-review-content-1, .food-review-content-2
+    {
+        -ms-flex: 1;
+        flex: 1;
+    }
+    
+    /* no bg */
+    .no-background
+    {
+        background: transparent !important;
+    }
+    
+    .button-position-custom-right
+    {
+        /* */
+    }
+    
+    .button-position-custom-left
+    {
+        margin-right: -10rem;
+        margin-top: 16.5rem;
+    }
+    
+    .button-learn-more {
+        padding: 1rem 2rem;
+        color: white;
+        background: linear-gradient(to right, #4CAF50, #2E8B57); /* Use a gradient background */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease; /* Add transition effect */
+        width: 300px;
+    }
+    
+    .button-learn-more:hover {
+        background: linear-gradient(to right, #2E8B57, #4CAF50); /* Change gradient on hover */
+    }
+    
+    .food-title
+    {
+        text-align: left;
+        font-size: xx-large;
+    }
+    
+    
+    #page-1
+    {
+        transition: transform 0.5s 0.5s ease;
+    }
+    
+    #page-2
+    {
+        transition: transform 1s 1s ease;
+    }
+    
+    #page-3
+    {
+        transition: transform 1.5s 1.5s ease;
+    }
+    
+    #page-4
+    {
+        transition: transform 2s 2s ease;
+    }
+    
+    #page-5
+    {
+        transition: transform 2.5s 2.5s ease;
+    }
+    
+    #page-6
+    {
+        transition: transform 3s 3s ease;
+    }
+
+    #page-7
+    {
+        transition: transform 3.5s 3.5s ease;
+    }
+
+    #page-8
+    {
+        transition: transform 3.5s 3.5s ease;
+    }
+
+    #page-9
+    {
+        transition: transform 3.5s 3.5s ease;
+    }
+
+    #page-10
+    {
+        transition: transform 3.5s 3.5s ease;
+    }
+
+    #page-11
+    {
+        transition: transform 3.5s 3.5s ease;
+    }
+
+    #page-11-1
+    {
+        transition: transform 1s 1s ease;
+    }
+
+    #page-11-2
+    {
+        transition: transform 1s 1s ease;
+    }
+    
+    .difficulty_image, .serving_image, .total_time_image, .scroll_up_image
+    {
+        position: relative;
+        width: 15%;
+        height: 15%;
+        padding-right: .8rem;
+    }
+    
+    
+    .difficulty_image
+    {
+    
+    }
+    
+    .serving_image
+    {
+    
+    }
+    
+    .total_time_image
+    {
+    
+    }
+    
+    .scroll_up_image
+    {
+        position: fixed !important;
+        padding-right: 0rem !important;
+        left: 93%;
+        top: 85%;
+        width: 5% !important;
+        height: 10% !important;
+        cursor: pointer;
+    }
+
+    .custom-search-bar
+    {
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 150%;
+        height: 120%;
+    }
+
+    .custom-suggestion
+    {
+    }
+}

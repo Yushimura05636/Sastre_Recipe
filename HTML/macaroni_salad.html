@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/front-page-screen-fhd.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_design.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_comment_section.css" />
+    <title>Macaroni Salad Recipe</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../HTML/about_us.html">About</a></li>
+            <li><a href="../HTML/service.html">Services</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="search-bar fade-in-up animation-delay-2long custom-search-bar" >
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-box" id="searchBox">
+        </div>
+        <div id="suggestions" style="left:-24.5%;">
+            &nbsp;
+        </div>
+        <script src="../JAVASCRIPT/function_search.js"></script>
+    </div>
+    <h1>
+        Macaroni Salad
+    </h1>
+    <div class="review-container">
+        <div class="review-content" id="review-content">
+            <img class="food-image" src="../RES/background_macaroni_salad.jpg" width="75%" />
+            <div class="flex-main recipe-container-main">
+                <div class="food-review-content-1">
+                    <h2 class="text-left">Macaroni Salad Recipe</h2>
+                    <ul>
+                        <li>2 cups elbow macaroni pasta</li>
+                        <li>1 cup mayonnaise</li>
+                        <li>1/4 cup sweet pickle relish</li>
+                        <li>1/4 cup chopped red bell pepper</li>
+                        <li>1/4 cup chopped green bell pepper</li>
+                        <li>1/4 cup chopped onion</li>
+                        <li>1/4 cup chopped celery</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                </div>
+                <div class="food-review-content-2">
+                    <h2 class="text-left">Instructions</h2>
+                    <ol class="modern-ol">
+                        <li>Cook the elbow macaroni pasta according to the package instructions. Drain and rinse with cold water to cool.</li>
+                        <li>In a large mixing bowl, combine the cooked macaroni, mayonnaise, sweet pickle relish, chopped bell peppers, chopped onion, and chopped celery. Mix well to combine.</li>
+                        <li>Season the macaroni salad with salt and pepper to taste. Adjust seasoning as needed.</li>
+                        <li>Cover and refrigerate the macaroni salad for at least 1 hour before serving to allow the flavors to meld together.</li>
+                        <li>Once chilled, serve the macaroni salad as a side dish or enjoy it as a light meal on its own.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="video-content">
+                How to make Macaroni Salad?
+                <iframe width="789" height="592" src="https://www.youtube.com/embed/W9nZ6u15yis" title="Black Screen 10 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="container">
+                <h1 class="comment-title">Comment Section</h1>
+                <textarea id="commentInput" placeholder="Add your comment here"></textarea>
+                <button onclick="addComment()">Add Comment</button>
+                <div id="commentContainer" class="comments"></div>
+            </div>            
+        </div>
+    </div>
+    <script src="../JAVASCRIPT/function_comment.js"></script>
+</body>
+</html>
