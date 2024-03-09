@@ -265,7 +265,7 @@
     .front-page-content-div-2
     {
         width: 100%;
-        height: 4300px;
+        height: 970px;
     }
     
     .front-page-content-div-1-context-1,
@@ -746,5 +746,14 @@
 
     .custom-suggestion
     {
+    }
+
+    #imageResultSearch
+    {
+        position: fixed !important;
+        left: 90%;
+        top: 80%;
+        width: 100px !important;
+        cursor: pointer !important;
     }
 }
