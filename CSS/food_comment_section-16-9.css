@@ -1,0 +1,52 @@
+.comment-section-post
+{
+    color: black;
+    padding: 1rem;
+}
+
+.user-name
+{
+    color: red;
+}
+
+.container {
+    width: 1000px; /* Adjust as needed */
+    margin: 0 auto;
+    margin-top: 5%;
+    position: absolute;
+    left: 27% !important;
+    top: 127% !important;
+}
+
+.comments {
+    height: 500px; /* Adjust as needed */
+    overflow-y: auto;
+    border: 1px solid #ccc; /* Add border for clarity */
+    padding: 10px;
+    margin-top: 20px; /* Add some space between input and comments */
+}
+
+.comment {
+    margin-bottom: 10px; /* Add space between comments */
+}
+
+.comment-text {
+    font-size: 16px;
+    margin-bottom: 5px; /* Add space between comment text and user name */
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+#commentInput
+{
+    resize: none;
+    height: 5rem;
+    width: 95%;
+}
+
+.comment-title
+{
+    font-size: 1.5rem !important;
+}
