@@ -747,4 +747,9 @@
     .custom-suggestion
     {
     }
+
+    #imageResultSearch
+    {
+        display: none;
+    }
 }
