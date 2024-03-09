@@ -6,7 +6,7 @@ var suggestionText = "";
 
 // Sample suggestion data
 const suggestionData = [
-    'Recipe', 'Professional', 'Personality', 'Adobo', 'Spaghetti', 'Pizza', 'Cake', 'Omelette', 'Sushi', 'Lumpia'
+    'Recipe', 'Professional', 'Personality', 'Adobo', 'Spaghetti', 'Pizza', 'Cake', 'Omelette', 'Sushi', 'Bulalo', 'Mac&Cheese', 'Macaroni Salad', 'Lumpia'
 ];
 
 // Event listener for input in search box
@@ -19,14 +19,77 @@ searchBox.addEventListener('input', function() {
 // Function to display suggestions
 function displaySuggestions(suggestionsArray) {
     if (suggestionsArray.length > 0) {
-        const suggestionsHTML = suggestionsArray.map((item, index) => ` <div class="suggestion-item" onclick="showClickedItem(this, ${index})">${item}</div>`).join('');
+        const hideElementContent = document.getElementById('front-page-main');
+        const hideElementContentReview = document.getElementById('review-content');
+        let suggestionsHTML = '';
+        for (let index = 0; index < suggestionsArray.length; index++) {
+            
+            const item = suggestionsArray[index];
+            let suggestionItemHTML = '';
+
+            // check when the first result show will have image
+            suggestionItemHTML = `<div class="suggestion-item" onclick="showClickedItem(this, ${index})">${item}</div>`;
+
+            suggestionsHTML += suggestionItemHTML;
+        }
+
+        for(let i = 0; i < suggestionsArray.length; i++) {
+            if(i < 0)
+            {
+                var Image_Line = '<div>'; //not working
+                break;
+            }
+        }
+
+        if(hideElementContent)
+        {
+            if(suggestionsArray.length > 5)
+            {
+                hideElementContent.style.margin = "14% 0px";
+            }
+            else
+            {
+                hideElementContent.style.margin = "1% 0px";
+            }
+        }
+
+        if(hideElementContentReview)
+        {
+            if(suggestionsArray.length > 5)
+            {
+                hideElementContentReview.style.margin = "30% 0px";
+            }
+            else
+            {
+                hideElementContentReview.style.margin = "1% 0px";
+            }
+        }
+
         suggestions.innerHTML = suggestionsHTML;
         suggestionText = suggestionsHTML;
         suggestions.style.display = 'block';
     } else {
+        const hideElementContent = document.getElementById('front-page-main');
+        const hideElementContentReview = document.getElementById('review-content');
+
+        if(hideElementContent)
+        {
+            hideElementContent.style.margin = "1% 0px";
+        }
+
+        if(hideElementContentReview)
+        {
+            hideElementContentReview.style.margin = "1% 0px";
+        }
+        
         suggestions.innerHTML = '';
         suggestions.style.display = 'none';
     }
+}
+
+function showResult()
+{
+    alert(1);
 }
 
 function showClickedItem(item, index) {
@@ -37,6 +100,7 @@ function showClickedItem(item, index) {
 
 function searchChoice(item)
 {
+    console.log(item == "Pizza");
     switch(item)
     {
         case "Recipe":
@@ -61,29 +125,40 @@ function searchChoice(item)
             }
             break;
         case "Personality":
-            window.location.href ="#Personality";
+            window.location.href ="../HTML/bio.html";
             break;
         case "Adobo":
-            window.location.href ="#Adobo";
+            window.location.href ="../HTML/adobo.html";
             break;
         case "Spaghetti":
-            window.location.href ="#Spaghetti";
+            window.location.href ="../HTML/spaghetti.html";
             break;
-        case "Piza":
-            window.location.href ="#Pizza";
-            window.scrollTo({
-                top: document.getElementById('page-1').offsetParent,
-                behavior: 'smooth' // Optional: smooth scrolling effect
-            });
+        case "Pizza":
+            window.location.href ="../HTML/pizza.html";
             break;
         case "Cake":
-            window.location.href ="#Cake";
+            window.location.href ="../HTML/cake.html";
             break
         case "Omelette":
-            window.location.href ="#Omelette";
+            window.location.href ="../HTML/omelette.html";
             break;
         case "Lumpia":
-            window.location.href ="#Lumpia";
+            window.location.href ="../HTML/lumpia.html";
+            break;
+        case "Bulalo":
+            window.location.href ="../HTML/bulalo.html";
+            break;
+        case "Mac&Cheese":
+            window.location.href ="../HTML/mac&cheese.html";
+            break;
+        case "Macaroni Salad":
+            window.location.href ="../HTML/macaroni_salad.html";
+            break;
+        case "Sushi":
+            window.location.href ="../HTML/sushi.html";
+            break;
+        case "Contact":
+            window.location.href ="../HTML/contact.html";
             break;
         default:
             index = -1;

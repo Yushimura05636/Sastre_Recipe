@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/front-page-screen-fhd.css" id="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../CSS/front-page-dialog-box.css" />
     <script src="../JAVASCRIPT/function.js"></script>
     <title>Online Recipe</title>
 </head>
@@ -11,9 +12,9 @@
     <div class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="../HTML/about_us.html">About</a></li>
+            <li><a href="../HTML/service.html">Services</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
         </ul>
     </div>
     <div class="font-title-main-background">
@@ -34,7 +35,7 @@
             </div>
         </div>
     </div>
-    <div class="flex-front-page-content-main">
+    <div class="flex-front-page-content-main" id="front-page-main">
         <div class="flex-front-page-content-context" name="page_recipe" onclick="link(1);">
            <div class="front-page-content-context-inner fade-in-up">
                 <img class="front-page-content-icon" src="../RES/icon_cooking_dark.png" /><br/>
@@ -46,7 +47,7 @@
                 </p>
            </div>
         </div>
-        <div class="flex-front-page-content-context" name="page_recipe" onclick="link(2);">
+        <div class="flex-front-page-content-context" name="page_recipe" onclick="link(2);" id="hidden-page">
             <div class="front-page-content-context-inner fade-in-up animation-delay-short">
                 <img class="front-page-content-icon" src="../RES/icon_checf_dark.png" /><br/>
                 <span class="front-page-content-context-inner-text-center fade-in-up animation-delay-short">
@@ -58,7 +59,7 @@
            </div>            
         </div>
         <div class="flex-front-page-content-context" name="page_recipe" onclick="link(3);">
-            <div class="front-page-content-context-inner fade-in-up animation-delay-long">
+            <div class="front-page-content-context-inner fade-in-up animation-delay-long" onclick="searchChoice('Personality');">
                 <img class="front-page-content-icon" src="../RES/icon_character_chef_dark.png" /><br/>
                 <span class="front-page-content-context-inner-text-center fade-in-up animation-delay-long">
                     PERSONALITY
@@ -78,11 +79,11 @@
                 <div class="front-page-content-div-1-context-1-inner-1">
                     <div class="food-title">Pizza</div><br />
                     <img src="../RES/icon_difficulties.png" class="difficulty_image" /> Ease: Medium <br />
-                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 pizzas <br />
+                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 <br />
                     <img src="../RES/icon_time_left.png" class="total_time_image"/> Total Time: 50 mins.
                 </div>
                 <div class="front-page-content-div-1-context-1-inner-2 no-background button-position-custom-right">
-                    <button class="button-learn-more">
+                    <button class="button-learn-more" onclick="searchChoice('Pizza')">
                         Learn more!
                     </button>
                 </div>
@@ -91,14 +92,14 @@
         <div class="front-page-content-div-1-context-2" id="page-2">
             <div class="front-page-content-div-1-context-2-inner flex-main">
                 <div class="front-page-content-div-1-context-2-inner-1 no-background">
-                    <button class="button-learn-more button-position-custom-left">
+                    <button class="button-learn-more button-position-custom-left" onclick="searchChoice('Cake');">
                         Learn more!
                     </button>
                 </div>
                 <div class="front-page-content-div-1-context-2-inner-2">
                     <div class="food-title">Cake</div><br />
                     <img src="../RES/icon_difficulties.png" class="difficulty_image" /> Ease: Medium <br />
-                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 pizzas <br />
+                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 <br />
                     <img src="../RES/icon_time_left.png" class="total_time_image"/> Total Time: 50 mins.
                 </div>
             </div>
@@ -108,11 +109,11 @@
                 <div class="front-page-content-div-1-context-3-inner-1">
                     <div class="food-title">Spaghetti</div><br />
                     <img src="../RES/icon_difficulties.png" class="difficulty_image" /> Ease: Medium <br />
-                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 pizzas <br />
+                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 <br />
                     <img src="../RES/icon_time_left.png" class="total_time_image"/> Total Time: 50 mins.
                 </div>
                 <div class="front-page-content-div-1-context-3-inner-2 no-background button-position-custom-right">
-                    <button class="button-learn-more">
+                    <button class="button-learn-more" onclick="searchChoice('Spaghetti');">
                         Learn more!
                     </button>
                 </div>
@@ -121,14 +122,14 @@
         <div class="front-page-content-div-1-context-4" id="page-4">
             <div class="front-page-content-div-1-context-4-inner flex-main">
                 <div class="front-page-content-div-1-context-4-inner-1 no-background">
-                    <button class="button-learn-more button-position-custom-left">
+                    <button class="button-learn-more button-position-custom-left" onclick="searchChoice('Adobo');">
                         Learn more!
                     </button>
                 </div>
                 <div class="front-page-content-div-1-context-4-inner-2">
                     <div class="food-title">Adobo</div><br />
                     <img src="../RES/icon_difficulties.png" class="difficulty_image" /> Ease: Medium <br />
-                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 pizzas <br />
+                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 <br />
                     <img src="../RES/icon_time_left.png" class="total_time_image"/> Total Time: 50 mins.
                 </div>
             </div>
@@ -138,11 +139,11 @@
                 <div class="front-page-content-div-1-context-5-inner-1">
                     <div class="food-title">Sushi</div><br />
                     <img src="../RES/icon_difficulties.png" class="difficulty_image" /> Ease: Medium <br />
-                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 pizzas <br />
+                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 <br />
                     <img src="../RES/icon_time_left.png" class="total_time_image"/> Total Time: 50 mins.
                 </div>
                 <div class="front-page-content-div-1-context-5-inner-2 no-background button-position-custom-right">
-                    <button class="button-learn-more">
+                    <button class="button-learn-more" onclick="searchChoice('Sushi');">
                         Learn more!
                     </button>
                 </div>
@@ -151,20 +152,118 @@
         <div class="front-page-content-div-1-context-6" id="page-6">
             <div class="front-page-content-div-1-context-6-inner flex-main">
                 <div class="front-page-content-div-1-context-6-inner-1 no-background">
-                    <button class="button-learn-more button-position-custom-left">
+                    <button class="button-learn-more button-position-custom-left" onclick="searchChoice('Bulalo');">
                         Learn more!
                     </button>
                 </div>
                 <div class="front-page-content-div-1-context-6-inner-2">
                     <div class="food-title">Bulalo</div><br />
                     <img src="../RES/icon_difficulties.png" class="difficulty_image" /> Ease: Medium <br />
-                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 pizzas <br />
+                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 <br />
+                    <img src="../RES/icon_time_left.png" class="total_time_image"/> Total Time: 50 mins.
+                </div>
+            </div>
+        </div>
+        <div class="front-page-content-div-1-context-7" id="page-7">
+            <div class="front-page-content-div-1-context-7-inner flex-main">
+                <div class="front-page-content-div-1-context-7-inner-1">
+                    <div class="food-title">Omellete</div><br />
+                    <img src="../RES/icon_difficulties.png" class="difficulty_image" /> Ease: Medium <br />
+                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 <br />
+                    <img src="../RES/icon_time_left.png" class="total_time_image"/> Total Time: 50 mins.
+                </div>
+                <div class="front-page-content-div-1-context-7-inner-2 no-background button-position-custom-right">
+                    <button class="button-learn-more" onclick="searchChoice('Omelette');">
+                        Learn more!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="front-page-content-div-1-context-8" id="page-8">
+            <div class="front-page-content-div-1-context-8-inner flex-main">
+                <div class="front-page-content-div-1-context-8-inner-1 no-background">
+                    <button class="button-learn-more button-position-custom-left" onclick="searchChoice('Lumpia');">
+                        Learn more!
+                    </button>
+                </div>
+                <div class="front-page-content-div-1-context-8-inner-2">
+                    <div class="food-title">Lumpia</div><br />
+                    <img src="../RES/icon_difficulties.png" class="difficulty_image" /> Ease: Medium <br />
+                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 <br />
+                    <img src="../RES/icon_time_left.png" class="total_time_image"/> Total Time: 50 mins.
+                </div>
+            </div>
+        </div>
+        <div class="front-page-content-div-1-context-9" id="page-9">
+            <div class="front-page-content-div-1-context-9-inner flex-main">
+                <div class="front-page-content-div-1-context-9-inner-1">
+                    <div class="food-title">Mac & Cheese</div><br />
+                    <img src="../RES/icon_difficulties.png" class="difficulty_image" /> Ease: Medium <br />
+                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 <br />
+                    <img src="../RES/icon_time_left.png" class="total_time_image"/> Total Time: 50 mins.
+                </div>
+                <div class="front-page-content-div-1-context-9-inner-2 no-background button-position-custom-right">
+                    <button class="button-learn-more" onclick="searchChoice('Mac&Cheese');">
+                        Learn more!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="front-page-content-div-1-context-10" id="page-10">
+            <div class="front-page-content-div-1-context-10-inner flex-main">
+                <div class="front-page-content-div-1-context-10-inner-1 no-background">
+                    <button class="button-learn-more button-position-custom-left" onclick="searchChoice('Macaroni Salad');">
+                        Learn more!
+                    </button>
+                </div>
+                <div class="front-page-content-div-1-context-10-inner-2">
+                    <div class="food-title">Macaroni Salad</div><br />
+                    <img src="../RES/icon_difficulties.png" class="difficulty_image" /> Ease: Medium <br />
+                    <img src="../RES/icon_serving_dish.png" class="serving_image"/> Servings: 2 <br />
                     <img src="../RES/icon_time_left.png" class="total_time_image"/> Total Time: 50 mins.
                 </div>
             </div>
         </div>
     </div>
+    <div class="front-page-content-div-2">
+        <div class="front-page-content-div-text" id="front-professional-page-title">
+            PROFESSIONAL
+        </div>
+        <div class="front-page-content-div-2-context-1" id="page-11">
+            <div class="front-page-content-div-2-context-1-inner flex-main">
+                <div class="front-page-content-div-2-context-1-inner-1" id="page-11-1">
+                    &nbsp;
+                </div>
+                <div class="front-page-content-div-2-context-1-inner-2" id="page-11-2">
+                    &nbsp;
+                </div>
+                <div class="front-page-content-div-2-context-1-inner-3" id="page-11-3">
+                    <img src="../RES/image_chef_transparent.png" width="50%" height="100%"
+                    style="position: absolute; left: 100px;" />
+                    <div>
+                        <div class="dialog-box-container">
+                            <div class="dialog-box">
+                                Hello and welcome to my culinary website <br />
+                                to became a professional chief you have to learn <br />
+                                all the basic understanding of cooking!
+                            </div>
+                            <div class="dialog-arrow">
+                            </div>
+                        </div>
+                        <div onclick="searchChoice('Contact');">
+                            <div class="dialog-button">
+                            </div>
+                            <div class="dialog-outer-text">
+                                ENROLL COURSE NOW
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="screen-meassure"></div>
+    <img src="../RES/icon_arrow.png" width="50px" id="imageResultSearch" />
 </body>
 <script src="../JAVASCRIPT/function_search.js"></script>
 <script src="../JAVASCRIPT/function_scroll.js"></script>

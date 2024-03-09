@@ -30,10 +30,14 @@ function link_recipe()
 
 function link_professional()
 {
-    window.scrollTo({
-        top: 500,
-        behavior: 'smooth' // Optional: smooth scrolling effect
-    });
+    var recipeElement = document.getElementById('front-professional-page-title');
+    if (recipeElement) {
+        var offsetTop = recipeElement.getBoundingClientRect().top;
+        window.scrollTo({
+            top: window.scrollY + offsetTop,
+            behavior: 'smooth'
+        });
+    }
 }
 
 function link_personality()

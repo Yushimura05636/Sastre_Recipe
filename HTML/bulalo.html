@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/front-page-screen-fhd.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_design.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_comment_section.css" />
+    <title>Bulalo Recipe</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../HTML/about_us.html">About</a></li>
+            <li><a href="../HTML/service.html">Services</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="search-bar fade-in-up animation-delay-2long custom-search-bar" >
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-box" id="searchBox">
+        </div>
+        <div id="suggestions" style="left:-24.5%;">
+            &nbsp;
+        </div>
+        <script src="../JAVASCRIPT/function_search.js"></script>
+    </div>
+    <h1>
+        Bulalo
+    </h1>
+    <div class="review-container">
+        <div class="review-content" id="review-content">
+            <img class="food-image" src="../RES/background_bulalo.jpg" width="75%" />
+            <div class="flex-main recipe-container-main">
+                <div class="food-review-content-1">
+                    <h2 class="text-left">Bulalo Recipe</h2>
+                    <ul>
+                        <li>2 lbs beef shank with bone marrow</li>
+                        <li>1 onion, quartered</li>
+                        <li>3 cloves garlic, minced</li>
+                        <li>2 medium potatoes, quartered</li>
+                        <li>2 ears of corn, cut into thirds</li>
+                        <li>1 small cabbage, quartered</li>
+                        <li>Salt and pepper to taste</li>
+                        <li>Water</li>
+                    </ul>
+                </div>
+                <div class="food-review-content-2">
+                    <h2 class="text-left">Instructions</h2>
+                    <ol class="modern-ol">
+                        <li>In a large pot, bring water to a boil.</li>
+                        <li>Add the beef shank and cook for about 2 hours or until the meat is tender.</li>
+                        <li>Skim off any scum that rises to the surface.</li>
+                        <li>Add the onion and garlic to the pot and simmer for another 10 minutes.</li>
+                        <li>Add the potatoes and corn and simmer for another 10 minutes.</li>
+                        <li>Season with salt and pepper to taste.</li>
+                        <li>Add the cabbage and simmer for 3-5 minutes until the cabbage is tender.</li>
+                        <li>Remove from heat and serve hot.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="video-content">
+                How to make Bulalo?
+                <iframe width="789" height="592" src="https://www.youtube.com/embed/W9nZ6u15yis" title="Black Screen 10 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="container">
+                <h1 class="comment-title">Comment Section</h1>
+                <textarea id="commentInput" placeholder="Add your comment here"></textarea>
+                <button onclick="addComment()">Add Comment</button>
+                <div id="commentContainer" class="comments"></div>
+            </div>            
+        </div>
+    </div>
+    <script src="../JAVASCRIPT/function_comment.js"></script>
+</body>
+</html>

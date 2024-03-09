@@ -259,39 +259,57 @@
     .front-page-content-div-1
     {
         width: 100%;
-        height: 2200px;
+        height: 4300px;
     }
     
     .front-page-content-div-2
     {
         width: 100%;
-        height: 2200px;
+        height: 4300px;
     }
     
-    .front-page-content-div-1-context-1, .front-page-content-div-1-context-2, .front-page-content-div-1-context-3, .front-page-content-div-1-context-4, .front-page-content-div-1-context-5, .front-page-content-div-1-context-6, .front-page-content-div-1-context-7, .front-page-content-div-1-context-8, .front-page-content-div-1-context-9, .front-page-content-div-1-context-10
+    .front-page-content-div-1-context-1,
+    .front-page-content-div-1-context-2,
+    .front-page-content-div-1-context-3,
+    .front-page-content-div-1-context-4,
+    .front-page-content-div-1-context-5,
+    .front-page-content-div-1-context-6,
+    .front-page-content-div-1-context-7,
+    .front-page-content-div-1-context-8,
+    .front-page-content-div-1-context-9,
+    .front-page-content-div-1-context-10 
     {
         margin-top: -1rem;
         height: 25rem;
         font-family: "New Sans", sans-serif;
-        border-radius: 1rem 1rem;
+        border-radius: 1rem;
+        background-size: 100% 100%;
     }
-    
-    .front-page-conent-div-2-context-1, .front-page-conent-div-2-context-2, .front-page-conent-div-2-context-3, .front-page-conent-div-2-context-4, .front-page-conent-div-2-context-5
+
+    .front-page-content-div-1-context-1:hover,
+    .front-page-content-div-1-context-2:hover,
+    .front-page-content-div-1-context-3:hover,
+    .front-page-content-div-1-context-4:hover,
+    .front-page-content-div-1-context-5:hover,
+    .front-page-content-div-1-context-6:hover,
+    .front-page-content-div-1-context-7:hover,
+    .front-page-content-div-1-context-8:hover,
+    .front-page-content-div-1-context-9:hover,
+    .front-page-content-div-1-context-10:hover {
+        background-size: 105%; /* Increase background size on hover */
+    }
+        
+    .front-page-content-div-2-context-1,
+    .front-page-content-div-2-context-2,
+    .front-page-content-div-2-context-3,
+    .front-page-content-div-2-context-4,
+    .front-page-content-div-2-context-5 
     {
         margin-top: -1rem;
-        height: 25rem;
         font-family: "New Sans", sans-serif;
-        border-radius: 1rem 1rem;
-        border: 1px black solid;
+        border-radius: 1rem;
     }
-    
-    .front-page-conent-div-2-context-1
-    {
-        color: white;
-        width: 100%;
-        border-radius: 0rem !important;
-    }
-    
+
     .front-page-content-div-1-context-1
     {
         background: url("../RES/background_pizza.jpg");
@@ -364,21 +382,21 @@
         position: relative;
     }
 
-    .front-page-conent-div-1-context-7
+    .front-page-content-div-1-context-7
     {
         background: url("../RES/background_omelette.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: -60px 1px;
+        background-position: 60px;
         color: white;
         margin-top: 1rem;
         left: 100%;
         position: relative;
     }
 
-    .front-page-conent-div-1-context-8
+    .front-page-content-div-1-context-8
     {
-        background: url("../RES/background_bulalo.png");
+        background: url("../RES/background_lumpia.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: -60px 1px;
@@ -388,21 +406,21 @@
         position: relative;
     }
 
-    .front-page-conent-div-1-context-9
+    .front-page-content-div-1-context-9
     {
-        background: url("../RES/background_bulalo.png");
+        background: url("../RES/background_mac&cheese.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: -60px 1px;
+        background-position: 60px 1px;
         color: white;
         margin-top: 1rem;
         left: 100%;
         position: relative;
     }
 
-    .front-page-conent-div-1-context-10
+    .front-page-content-div-1-context-10
     {
-        background: url("../RES/background_bulalo.png");
+        background: url("../RES/background_macaroni_salad.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: -60px 1px;
@@ -410,6 +428,15 @@
         margin-top: 1rem;
         right: 100%;
         position: relative;
+    }
+
+    .front-page-content-div-2-context-1
+    {
+        background: url("../RES/background_kitchen.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        margin-top: 1rem;
     }
     
     .front-page-content-div-text
@@ -432,21 +459,19 @@
     .front-page-content-div-1-context-9-inner,
     .front-page-content-div-1-context-10-inner
     {
-        width: 40%;
+        width: 50%;
         height: 23rem;
         text-align: center;
         font-size: 2rem;
         padding: 1rem;
-        border: 1px solid black;
     }
     
     .front-page-content-div-2-context-1-inner
     {
-        width: 40%;
-        height: 23rem;
+        width: 100%;
+        height: 45rem !important;
         text-align: center;
         font-size: 2rem;
-        padding: 1rem;
     }
     
     
@@ -466,8 +491,10 @@
         text-align: justify;
         background: rgba(128, 128, 128, 0.78);
         width: 50%;
-        padding-left: 7.5rem;
+        padding-left: 5.5rem;
         padding-top: 5rem;
+        border-radius: 1rem !important;
+        
     }
     
     .front-page-content-div-1-context-1-inner-2,
@@ -486,16 +513,8 @@
         text-shadow: 1px 2px black;
         text-align: justify;
         background: rgba(128, 128, 128, 0.78);
-    }
-    
-    .front-page-content-div-1-context-1-inner-2,
-    .front-page-content-div-1-context-3-inner-2,
-    .front-page-content-div-1-context-5-inner-2,
-    .front-page-content-div-1-context-7-inner-2,
-    .front-page-content-div-1-context-9-inner-2
-    {
-        margin-left: 50% !important;
-        margin-top: 10% !important;
+        width: 500px;
+        border-radius: 1rem !important;
     }
     
     .front-page-content-div-1-context-2-inner-1,
@@ -504,19 +523,71 @@
     .front-page-content-div-1-context-8-inner-1,
     .front-page-content-div-1-context-10-inner-1
     {
-        margin-right: 55% !important;
+        margin-right: 40% !important;
+        border-radius: 1rem !important
     }
     
+    .front-page-content-div-1-context-1-inner-2,
+    .front-page-content-div-1-context-3-inner-2,
+    .front-page-content-div-1-context-5-inner-2,
+    .front-page-content-div-1-context-7-inner-2,
+    .front-page-content-div-1-context-9-inner-2
+    {
+        margin-left: 40% !important;
+        margin-top: 20% !important;
+        border-radius: 1rem !important;
+    }
+    
+
+    .front-page-content-div-2-context-1-inner-1
+    {
+        width: 100%;
+        background: url("../RES/background_red_curtain.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        position: relative !important;
+    }
+
+    .front-page-content-div-2-context-1-inner-2
+    {
+        width: 100%;
+        background: url("../RES/background_red_curtain.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        position: relative !important; 
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    
+    .front-page-content-div-2-context-1-inner-3
+    {
+        display: none;
+        animation: fadeIn 0.1s;
+    }
+
+    @keyframes fadeIn {
+        0%
+        {
+            opacity: 0;
+        }
+        100%
+        {
+            opacity: 1;
+        }
+    }
+
     /* public flex */
     .flex-main
     {
-        width: 97%;
+        width: 100%;
         height: 370px;
         display: flex;
         position: relative;
     }
     
-    .flex-main, .front-page-content-div-1-context-1-inner, .front-page-content-div-2-context-1-inner
+    .flex-main, .front-page-content-div-1-context-1-inner, .front-page-content-div-2-context-1-inner, .food-review-content-1, .food-review-content-2
     {
         -ms-flex: 1;
         flex: 1;
@@ -593,6 +664,41 @@
     {
         transition: transform 3s 3s ease;
     }
+
+    #page-7
+    {
+        transition: transform 3.5s 3.5s ease;
+    }
+
+    #page-8
+    {
+        transition: transform 3.5s 3.5s ease;
+    }
+
+    #page-9
+    {
+        transition: transform 3.5s 3.5s ease;
+    }
+
+    #page-10
+    {
+        transition: transform 3.5s 3.5s ease;
+    }
+
+    #page-11
+    {
+        transition: transform 3.5s 3.5s ease;
+    }
+
+    #page-11-1
+    {
+        transition: transform 1s 1s ease;
+    }
+
+    #page-11-2
+    {
+        transition: transform 1s 1s ease;
+    }
     
     .difficulty_image, .serving_image, .total_time_image, .scroll_up_image
     {
@@ -627,5 +733,17 @@
         width: 5% !important;
         height: 10% !important;
         cursor: pointer;
+    }
+
+    .custom-search-bar
+    {
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 150%;
+        height: 120%;
+    }
+
+    .custom-suggestion
+    {
     }
 }

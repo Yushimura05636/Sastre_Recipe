@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/front-page-screen-fhd.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_design.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_comment_section.css" />
+    <title>Mac and Cheese Recipe</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../HTML/about_us.html">About</a></li>
+            <li><a href="../HTML/service.html">Services</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="search-bar fade-in-up animation-delay-2long custom-search-bar" >
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-box" id="searchBox">
+        </div>
+        <div id="suggestions" style="left:-24.5%;">
+            &nbsp;
+        </div>
+        <script src="../JAVASCRIPT/function_search.js"></script>
+    </div>
+    <h1>
+        Mac and Cheese
+    </h1>
+    <div class="review-container">
+        <div class="review-content" id="review-content">
+            <img class="food-image" src="../RES/background_mac_and_cheese.jpg" width="75%" />
+            <div class="flex-main recipe-container-main">
+                <div class="food-review-content-1">
+                    <h2 class="text-left">Mac and Cheese Recipe</h2>
+                    <ul>
+                        <li>2 cups macaroni pasta</li>
+                        <li>2 tablespoons butter</li>
+                        <li>2 tablespoons all-purpose flour</li>
+                        <li>2 cups milk</li>
+                        <li>2 cups shredded cheddar cheese</li>
+                        <li>Salt and pepper to taste</li>
+                        <li>Bread crumbs (optional)</li>
+                    </ul>
+                </div>
+                <div class="food-review-content-2">
+                    <h2 class="text-left">Instructions</h2>
+                    <ol class="modern-ol">
+                        <li>Cook the macaroni pasta according to the package instructions. Drain and set aside.</li>
+                        <li>In a saucepan, melt the butter over medium heat.</li>
+                        <li>Add the flour and cook for 1-2 minutes, stirring constantly, to make a roux.</li>
+                        <li>Gradually whisk in the milk until smooth. Cook for another 2-3 minutes, stirring constantly, until the sauce thickens.</li>
+                        <li>Stir in the shredded cheddar cheese until melted and smooth.</li>
+                        <li>Season the cheese sauce with salt and pepper to taste.</li>
+                        <li>Add the cooked macaroni to the cheese sauce and stir until well combined.</li>
+                        <li>If desired, sprinkle bread crumbs over the top for added crunch.</li>
+                        <li>Transfer the mac and cheese to a baking dish and bake at 350°F (175°C) for 20-25 minutes, or until bubbly and golden brown on top.</li>
+                        <li>Remove from the oven and let cool slightly before serving.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="video-content">
+                How to make Mac and Cheese?
+                <iframe width="789" height="592" src="https://www.youtube.com/embed/W9nZ6u15yis" title="Black Screen 10 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="container">
+                <h1 class="comment-title">Comment Section</h1>
+                <textarea id="commentInput" placeholder="Add your comment here"></textarea>
+                <button onclick="addComment()">Add Comment</button>
+                <div id="commentContainer" class="comments"></div>
+            </div>            
+        </div>
+    </div>
+    <script src="../JAVASCRIPT/function_comment.js"></script>
+</body>
+</html>

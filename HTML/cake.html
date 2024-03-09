@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/front-page-screen-fhd.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_design.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/food_comment_section.css" />
+    <title>Cake Recipe</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../HTML/about_us.html">About</a></li>
+            <li><a href="../HTML/service.html">Services</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="search-bar fade-in-up animation-delay-2long custom-search-bar" >
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-box" id="searchBox">
+        </div>
+        <div id="suggestions" style="left:-24.5%;">
+            &nbsp;
+        </div>
+        <script src="../JAVASCRIPT/function_search.js"></script>
+    </div>
+    <h1>
+        Cake
+    </h1>
+    <div class="review-container">
+        <div class="review-content" id="review-content">
+            <img class="food-image" src="../RES/background_cake.jpg" width="75%" />
+            <div class="flex-main recipe-container-main">
+                <div class="food-review-content-1">
+                    <h2 class="text-left">Cake Recipe</h2>
+                    <ul>
+                        <li>2 cups all-purpose flour</li>
+                        <li>1 1/2 cups granulated sugar</li>
+                        <li>1 cup milk</li>
+                        <li>1/2 cup unsalted butter, softened</li>
+                        <li>2 eggs</li>
+                        <li>2 teaspoons baking powder</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>1/2 teaspoon salt</li>
+                    </ul>
+                </div>
+                <div class="food-review-content-2">
+                    <h2 class="text-left">Instructions</h2>
+                    <ol class="modern-ol">
+                        <li>Preheat oven to 350°F (175°C). Grease and flour a 9x13-inch baking pan.</li>
+                        <li>In a large mixing bowl, cream together butter and sugar until light and fluffy.</li>
+                        <li>Add eggs one at a time, beating well after each addition. Stir in vanilla extract.</li>
+                        <li>In a separate bowl, combine flour, baking powder, and salt.</li>
+                        <li>Add dry ingredients to the creamed mixture alternately with milk, beginning and ending with flour mixture.</li>
+                        <li>Spread batter into prepared pan and smooth the top.</li>
+                        <li>Bake in preheated oven for 30 to 35 minutes, or until a toothpick inserted into the center comes out clean.</li>
+                        <li>Allow the cake to cool completely before serving.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="video-content">
+                How to make cake?
+                <iframe width="789" height="592" src="https://www.youtube.com/embed/W9nZ6u15yis" title="Black Screen 10 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="container">
+                <h1 class="comment-title">Comment Section</h1>
+                <textarea id="commentInput" placeholder="Add your comment here"></textarea>
+                <button onclick="addComment()">Add Comment</button>
+                <div id="commentContainer" class="comments"></div>
+            </div>            
+        </div>
+    </div>
+    <script src="../JAVASCRIPT/function_comment.js"></script>
+</body>
+</html>
